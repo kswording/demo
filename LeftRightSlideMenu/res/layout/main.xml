@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff7f8ee" >
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/left_layout">
+        <ListView 
+            android:id="@+id/title_list"
+            android:background="#ffff00ff"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:scrollbars="none"
+            android:listSelector="@null"></ListView>
+    </LinearLayout>
+	
+   <LinearLayout
+        android:id="@+id/right_layout"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:orientation="vertical">
+        <ListView 
+            android:background="#ff00ff00"
+            android:id="@+id/infor_list"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:scrollbars="none"
+            android:listSelector="@null"></ListView>
+    </LinearLayout>
+    <com.example.leftrightslidemenu.SlideView
+        android:id="@+id/main_content"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:scrollbars="none">
+        <LinearLayout 
+            android:id="@+id/info_content"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:minHeight="800dip">
+           <!--  <ListView 
+            android:background="#ffccffcc"
+            android:id="@+id/main_list"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:scrollbars="none"
+            android:listSelector="@null"></ListView> -->
+        </LinearLayout>
+        
+        
+    </com.example.leftrightslidemenu.SlideView>
+</RelativeLayout>
